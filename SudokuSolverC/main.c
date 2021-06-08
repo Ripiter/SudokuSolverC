@@ -3,14 +3,8 @@
 #include "Input.h"
 #include "Game.h"
 
-
-
 int map[SUDOKU_WIDTH][SUDOKU_HEIGHT] = { 0 };
 int generated_map[SUDOKU_WIDTH][SUDOKU_HEIGHT] = { 0 };
-
-
-
-
 
 int is_auto_generated(int _x, int _y) {
 	if (generated_map[_x][_y] == 0)
@@ -18,7 +12,6 @@ int is_auto_generated(int _x, int _y) {
 
 	return 1;
 }
-
 
 int valid_place(int _x, int _y) {
 	if (out_of_bounds(_x, _y) == 0) {
@@ -28,7 +21,6 @@ int valid_place(int _x, int _y) {
 	}
 	return 0;
 }
-
 
 int valid_square_to_place(int to_place, int _startX, int _startY) {
 
@@ -44,8 +36,6 @@ int valid_square_to_place(int to_place, int _startX, int _startY) {
 
 	return 1;
 }
-
-
 
 // x and y is a direction
 // x = 1 is right so y = 0 

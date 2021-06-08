@@ -139,7 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataReturn.c" />
+    <ClCompile Include="Game.c" />
+    <ClCompile Include="Input.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="Vector2.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataReturn.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

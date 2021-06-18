@@ -1,4 +1,4 @@
 # SudokuSolverC
 
-[X] Create Sudoku \n
+[X] Create Sudoku  
 [ ] Create Sudoku Solver -work in progress

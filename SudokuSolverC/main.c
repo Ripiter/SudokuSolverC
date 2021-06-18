@@ -132,9 +132,7 @@ void place_in_random_position(int _amount) {
 	}
 }
 
-
 int main() {
-
 	int gameOver = 0;
 	time_t t;
 	srand((unsigned)time(&t));

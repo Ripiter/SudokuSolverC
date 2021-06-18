@@ -1,5 +1,6 @@
 #include "Vector2.h"
 
+
 int compare_vector2(Vector2_t vec, Vector2_t vec2)
 {
 	if (vec.x == vec2.x && vec.y == vec2.y)

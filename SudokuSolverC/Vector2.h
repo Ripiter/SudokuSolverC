@@ -1,6 +1,5 @@
 #pragma once
 typedef struct Vector2 Vector2_t;
-typedef struct Vector3 Vector3_t;
 
 struct Vector2 {
 	int x;

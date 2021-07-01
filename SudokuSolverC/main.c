@@ -24,6 +24,10 @@ int valid_place(int _x, int _y) {
 
 int valid_square_to_place(int to_place, int _startX, int _startY) {
 
+	// if we want to replace a number in a square with 0
+	if (to_place == 0)
+		return 1;
+
 	Vector2_t position = get_closes_middle_square(_startX, _startY);
 
 	for (int xx = -1; xx <= 1; xx++) {
@@ -41,6 +45,10 @@ int valid_square_to_place(int to_place, int _startX, int _startY) {
 // x = 1 is right so y = 0 
 // y = 1 is going down so x = 0
 int valid_line_to_place(int to_place, int _startX, int _startY) {
+
+	// if we want to replace a number in a line with 0
+	if (to_place == 0)
+		return 1;
 
 	for (int i = 0; i < 9; i++)
 	{
@@ -137,7 +145,7 @@ int main() {
 	time_t t;
 	srand((unsigned)time(&t));
 
-	place_in_random_position(20);
+	place_in_random_position(25);
 
 	while (gameOver == 0) {
 		print_map();
@@ -150,11 +158,13 @@ int main() {
 
 			if (victory())
 			{
-				printf("\nYou won the game");
 				gameOver = 1;
 			}
 		}
 		clear();
 	}
+
+	printf("\nYou won the game");
+
 	return 0;
 }

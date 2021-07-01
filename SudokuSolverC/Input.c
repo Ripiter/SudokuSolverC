@@ -36,12 +36,12 @@ int user_input_number() {
 
 	do {
 
-		printf("Number 1-9: ");
+		printf("Number 0-9: ");
 		scanf_s("%d", &number);
 		getchar();
 		printf("\n");
 
-	} while (number <= 0 || number >= 10);
+	} while (number < 0 || number >= 10);
 
 	return number;
 }
